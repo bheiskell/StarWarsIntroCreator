@@ -8,7 +8,7 @@
     "clear": "rm -rf dist .cache public",
     "build": "yarn clear && parcel build ./src/index.html && cp .nojekyll dist",
     "build-gitlab": "yarn build -d public --public-url /starwarsintrocreator-stage",
-    "start": "parcel ./src/index.html -p $PORT --no-hmr",
+    "start": "parcel ./src/index.html -p $PORT --host 0.0.0.0 --no-hmr",
     "test": "jest",
     "test:watch": "yarn test --watchAll",
     "test:coverage": "yarn test --coverage",
