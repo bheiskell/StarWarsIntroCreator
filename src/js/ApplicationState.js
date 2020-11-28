@@ -78,11 +78,9 @@ class ApplicationState {
           if (!isAudioPlayError) {
             throw error;
           }
-          await ViewController.requestWindowInteraction();
           await ViewController.playOpening(opening);
         }
 
-        UrlHandler.goToEditPage(key);
         break;
 
       case EDITING:
