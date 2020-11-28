@@ -78,7 +78,7 @@ class ApplicationState {
           if (!isAudioPlayError) {
             throw error;
           }
-          setTimeout(function() { document.querySelector('#requestInteractionButton').click(); }, 1000);
+          
           await ViewController.requestWindowInteraction(); 
           await ViewController.playOpening(opening);
         }
