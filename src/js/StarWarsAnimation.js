@@ -93,7 +93,8 @@ class StarWarsAnimation {
     wordContainers[1].textContent = word2;
 
     logoTextContainer.style.display = 'flex';
-    logoDefaultContainer.style.display = 'none';
+    logoDefaultContainer.style.display = 'none';  
+    this.play();
   }
 
   play() {
