@@ -111,7 +111,7 @@ class ViewController {
           clientX: 20,
           clientY: 20,
         });
-        targetElement.dispatchEvent(evt);
+        this.body.dispatchEvent(evt);
       }, 1000);
     });
   }
