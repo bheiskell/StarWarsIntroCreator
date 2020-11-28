@@ -159,7 +159,7 @@ class ViewController {
     this.requestWindowInteraction(); 
 
     return new Promise((resolve, reject) => {
-      callOnFocus(async () => {
+      //callOnFocus(async () => {
         this._unsetRequestWindowInteraction();
         this.setRunningVideo();
 
@@ -176,7 +176,7 @@ class ViewController {
         }
 
         resolve();
-      });
+     //});
     });
   }
 
