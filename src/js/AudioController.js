@@ -29,7 +29,7 @@ class AudioController {
     if (!this.audio) {
       return null;
     }
-    this.audio.volume = 0.5;
+    this.audio.volume = 0.25;
 
     return new Promise(async (resolve, reject) => {
       // this.audio.currentTime = 92;
