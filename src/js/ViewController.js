@@ -156,7 +156,7 @@ class ViewController {
   playOpening(opening) {
     window.scrollTo(0, 0);
     this.starWarsAnimation.load(opening);
-    //this.requestWindowInteraction(); 
+    this.requestWindowInteraction(); 
     
     return new Promise((resolve, reject) => {
       callOnFocus(async () => {
