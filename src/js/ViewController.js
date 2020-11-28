@@ -157,8 +157,7 @@ class ViewController {
     window.scrollTo(0, 0);
     this.starWarsAnimation.load(opening);
     this.requestWindowInteraction(); 
-
-    return new Promise((resolve, reject) => {
+    var x = new Promise((resolve, reject) => {
       callOnFocus(async () => {
         this._unsetRequestWindowInteraction();
         this.setRunningVideo();
@@ -178,6 +177,9 @@ class ViewController {
         resolve();
      });
     });
+    this.requestInteractionButton.click();
+    
+    return x;
   }
 
   _resetAnimation() {
