@@ -22,12 +22,12 @@ export const callOnFocus = (callback) => {
     return callback();
   };
 
-  //if (document.hasFocus()) {
+  if (document.hasFocus()) {
     listener();
     return;
-  //}
+  }
 
-  //window.addEventListener('focus', listener, true);
+  window.addEventListener('focus', listener, true);
 };
 
 export const appendKeyframesRule = (keyframeName, ruleToAppend) => {
