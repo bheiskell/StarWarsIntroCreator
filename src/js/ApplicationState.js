@@ -78,6 +78,7 @@ class ApplicationState {
           if (!isAudioPlayError) {
             throw error;
           }
+          await ViewController.requestWindowInteraction(); 
           await ViewController.playOpening(opening);
         }
 
