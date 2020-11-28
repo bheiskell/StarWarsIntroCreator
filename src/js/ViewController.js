@@ -155,11 +155,9 @@ class ViewController {
   playOpening(opening) {
     window.scrollTo(0, 0);
     this.starWarsAnimation.load(opening);
-    this.requestWindowInteraction();
 
     return new Promise((resolve, reject) => {
       callOnFocus(async () => {
-        this._unsetRequestWindowInteraction();
         this.setRunningVideo();
 
         await AudioController.canPlay();
