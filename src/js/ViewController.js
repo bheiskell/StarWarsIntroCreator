@@ -101,9 +101,9 @@ class ViewController {
       
       const listener = this.requestInteractionButton.addEventListener('click', () => {
         this.requestInteractionButton.removeEventListener('click', listener, true);
-        //resolve();
+        resolve();
       });
-      resolve();
+      //resolve();
     });
   }
 
