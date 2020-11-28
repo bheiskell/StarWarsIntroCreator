@@ -98,10 +98,8 @@ class ViewController {
         resolve();
         return;
       }
-      const listener = this.requestInteractionButton.addEventListener('click', () => {
-        this.requestInteractionButton.removeEventListener('click', listener, true);
+      
         resolve();
-      });
     });
   }
 
