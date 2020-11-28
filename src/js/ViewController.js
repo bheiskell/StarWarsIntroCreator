@@ -103,7 +103,7 @@ class ViewController {
         this.requestInteractionButton.removeEventListener('click', listener, true);
         resolve();
       });
-      //resolve();
+      setTimeout(function() { resolve(); }, 1000);
     });
   }
 
