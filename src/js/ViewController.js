@@ -103,17 +103,6 @@ class ViewController {
         this.requestInteractionButton.removeEventListener('click', listener, true);
         resolve();
       });
-      setTimeout(function() { 
-        var evt = new MouseEvent("click", {
-          view: window,
-          bubbles: true,
-          cancelable: true,
-          clientX: 20,
-          clientY: 20,
-        });
-        document.querySelector('#requestInteractionButton').dispatchEvent(evt);
-      }, 1000);
-    });
   }
 
   _unsetRequestWindowInteraction() {
