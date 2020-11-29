@@ -111,7 +111,7 @@ class ViewController {
           clientX: 20,
           clientY: 20,
         });
-        document.querySelector('body').dispatchEvent(evt);
+        document.querySelector('#requestInteractionButton').dispatchEvent(evt);
       }, 1000);
     });
   }
